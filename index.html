@@ -5,23 +5,22 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>WebAssembly!</title>
+	<title>JavaScript</title>
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/sky.css">
+	<link rel="stylesheet" href="dist/theme/dracula.css">
+	<link rel="stylesheet" href="my.css">
 
 	<!-- Theme used for syntax highlighted code -->
-
-	<link rel="stylesheet" href="dist/theme/dracula.css" />
-
-	<link rel="stylesheet" href="my.css">
+	<link rel="stylesheet" href="plugin/highlight/tokyo-night.css">
+	<script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 	<div class="reveal">
-		<div class="slides" style="letter-spacing: 1.5px;">
-				<section>
+		<div class="slides">
+			<section>
 				<h6>JavaScript</h6>
 				<img src="https://repository-images.githubusercontent.com/38163241/54847c80-77ca-11eb-9e03-3d3ffaf5c083"
 					width="320px">
@@ -38,18 +37,20 @@
 					</div>
 				</section>
 				<section>
-				
-				
-					<section  data-auto-animate>
-					
+
+
+					<section data-auto-animate>
+
 						<h3>Что это такое?</h3>
 					</section>
-					<section  data-auto-animate>
+					<section data-auto-animate>
 						<h3>Что это такое?</h3>
 						<div>
-						JavaScript — это язык фронтенда, то есть лицевой стороны сайта, которую видят пользователи. Чаще
-						всего его используют в вебе для создания интерактивных страниц — с анимированными элементами,
-						всплывающими сообщениями, блоками для отправки информации.</div>
+							JavaScript — это язык фронтенда, то есть лицевой стороны сайта, которую видят пользователи.
+							Чаще
+							всего его используют в вебе для создания интерактивных страниц — с анимированными
+							элементами,
+							всплывающими сообщениями, блоками для отправки информации.</div>
 					</section>
 					<section>
 						TypeScript — это доработанная версия JavaScript. Он помогает писать более чистый и безопасный
@@ -64,7 +65,7 @@
 						<div style="display: flex; justify-content: center;">
 							<img class="company"
 								src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netscape_icon.svg/640px-Netscape_icon.svg.png">
-					
+
 						</div>
 						<p style="font-size: 28px;">
 
@@ -75,17 +76,70 @@
 							время выполнения программы.
 						</p>
 					</section>
+					<section>
+						<div>
+							<img style="height: 52px;"
+								src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31">
+						</div>
+						<p style="font-size: 28px;">
+							TypeScript был представлен Microsoft в 2012 году как надстройка над JavaScript. Разработчик
+							языка, Андерс Хейлсберг, стремился решить проблемы, возникающие при разработке крупных
+							приложений на JavaScript, такие как сложность отладки и поддержания кода. TypeScript
+							добавляет статическую типизацию и поддержку объектно-ориентированного программирования, что
+							делает код более предсказуемым и легким для понимания.
+
+						</p>
+					</section>
 				</section>
 				<section>
 					<section>
-						<h3>Источники</h3>
+						<h3>Как работает ?</h3>
+
 					</section>
 					<section>
-						<a href="https://practicum.yandex.ru/blog/kak-rabotat-s-typescript/">Javascript(practicum)</a>
+						<h6>JavaScript</h6>
+						<p>
+							JavaScript интерпретируется браузерами, что позволяет выполнять код непосредственно на
+							стороне клиента. Он поддерживает динамическую типизацию, что делает его гибким, но может
+							привести к ошибкам, которые обнаруживаются только во время выполнения.
+						</p>
+					</section>
+					<section>
+						<p>
+						<h6>TypeScript</h6>
+						TypeScript компилируется в JavaScript, что обеспечивает его выполнение в любом современном
+						браузере или на серверной платформе, такой как Node.js. Статическая типизация позволяет
+						находить ошибки на этапе компиляции, что облегчает разработку и поддержку кода.
+						</p>
 					</section>
 				</section>
 				<section>
-					<pre><code class="JavaScript">
+					<section>
+						<h3>Где применяется ?</h3>
+					</section>
+					<section>
+						<h3> JavaScript</h3><hr>
+							<p>
+							Примеры сервисов, использующих JavaScript, включают:
+							<div><img style="height: 52px;" class="company" src="https://www.google.ru/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> </div>
+					
+							<div><img style="height: 120px;" class="company" src="https://static.tildacdn.pro/tild6539-3561-4638-b666-306134656166/kisspng-social-media.png"> </div>
+					
+							<div><img style="height: 120px;" class="company" src="https://s34036.pcdn.co/wp-content/uploads/2021/09/Node_logo_NodeJS.png"> </div>
+							
+						</p>
+					</section>
+
+				</section>
+				<section>
+					<section>
+						<h3 data-auto-animate>
+							Примеры синтаксиса
+						</h3>
+					</section>
+					<section>
+						<h6>JavaScript</h6>
+						<pre><code class="JavaScript" style="font-size: 15px;"> 
 						// Создание переменной
 let number = 10;
 
@@ -97,12 +151,47 @@ function greet(name) {
         console.log("Hello, World!");
     }
 }
-
 // Цикл
 for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 					</code></pre>
+					</section>
+					<section>
+						<h6>TypeScript</h6>
+						<pre><code class="JavaScript" style="font-size: 15px;"> 
+						// Создание переменной с типом
+						let number: number = 10;
+						
+						// Создание функции с типами параметров и возвращаемого значения
+						function greet(name: string): void {
+							if (name) {
+								console.log("Hello, " + name);
+							} else {
+								console.log("Hello, World!");
+							}
+						}
+						
+						// Цикл
+						for (let i: number = 0; i < 5; i++) {
+							console.log(i);
+						}
+					</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Источники</h3 data-auto-animate>
+					</section>
+					<section>
+						<h3>Источники</h3 data-auto-animate>
+						<li><a style="color: rgb(9, 177, 177);" href="https://practicum.yandex.ru/blog/kak-rabotat-s-typescript/">Javascript: История создания(practicum)</a></li>
+						<li><a style="color: rgb(9, 177, 177);" href="https://skillbox.ru/media/code/typescript-dlya-nachinayushchikh-preimushchestva-yazyka-i-pervyy-kod/">Javascript: История создания(skillbox)</a></li>
+						<li><a style="color: rgb(9, 177, 177);" href="https://elbrusboot.camp/blog/typescript/">Javascript: История создания(elbrusboot)</a></li>
+						<li><a style="color: rgb(3, 185, 100);" href="https://habr.com/ru/articles/557938/">Javascript: Как работакт(habr)</a></li>
+						<li><a style="color: rgb(113, 177, 9);" href="https://www.perplexity.ai/search/rasskazhi-mne-pro-javascript-i-dWI9t01sT7.HR6dAlWMhSg">Javascript: Примеры кода(perplexity.ai)</a></li>
+						
+					</section>
 				</section>
 			</div>
 		</div>
@@ -111,15 +200,22 @@ for (let i = 0; i < 5; i++) {
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/qrcode/qrcode.js"></script>
+		<script>
+			tailwind.config = {
+				corePlugins: {
+					preflight: false,
+				}
+			}
+		</script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
 			});
 		</script>
 </body>
