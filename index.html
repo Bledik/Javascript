@@ -12,14 +12,8 @@
 	<link rel="stylesheet" href="dist/theme/sky.css">
 
 	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 
-	<script src="jquery.js"></script>
-	<script>
-		$(function () {
-			$("#includedContent").load("b.html");
-		});
-	</script>
+	<link rel="stylesheet" href="dist/theme/dracula.css" />
 
 	<link rel="stylesheet" href="my.css">
 </head>
@@ -27,68 +21,107 @@
 <body>
 	<div class="reveal">
 		<div class="slides" style="letter-spacing: 1.5px;">
-			<section>
-				<h6>JavaScript и typeScript</h6>
-				<img src="https://webassembly.org/css/webassembly.svg" width="320px">
+				<section>
+				<h6>JavaScript</h6>
+				<img src="https://repository-images.githubusercontent.com/38163241/54847c80-77ca-11eb-9e03-3d3ffaf5c083"
+					width="320px">
 				<div style="text-align: end; font-size: 14pt">
-					Author:<a href="https://github.com/XaoriGit"> Ауль Л. Н.</a>
+					Author:<a href="https://github.com/Bledik"> Ауль Л. Н.</a>
 				</div>
 			</section>
-			<section>
+			<div class="slides" style="letter-spacing: 1.5px;">
 				<section>
-					<h3>Что это такое?</h3>
-				</section>
-				<section>
-					JavaScript и TypeScript — это два языка программирования, которые играют ключевую роль в веб-разработке.
-				</section>
-			</section>
-			<section>
-				<section>
-					<h3>История создания</h3>
-				</section>
-				<section>
-					<div style="display: flex; justify-content: center;">
-						<img class="company" src="https://www.mozilla.org/media/protocol/img/logos/mozilla/logo-word-hor.e20791bb4dd4.svg">
-						<img class="company" src="https://www.google.ru/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-						<img class="company" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/200px-Microsoft_logo_%282012%29.svg.png">
-						<img class="company" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/80px-Apple_logo_black.svg.png">
+					<h6>TypeScript</h6>
+					<img src="https://gitlab.com/uploads/-/system/group/avatar/10720253/typescript.png" width="320px">
+					<div style="text-align: end; font-size: 14pt">
+
 					</div>
-					<p style="font-size: 28px;">
-						JavaScript
-						JavaScript был разработан в 1995 году Бренданом Айком в компании Netscape. Язык
-						изначально создавался для добавления интерактивности на веб-страницы и быстро 
-						стал стандартом для веб-разработки. JavaScript является динамически 
-						типизированным языком, что означает, что типы переменных могут изменяться во
-						время выполнения программы <a href="https://webassembly.org/">WebAssembly</a>
-					</p>	 
-				</section>
-			</section>
-			<section>
-				<section>
-					<h3>Источники</h3>
 				</section>
 				<section>
-					<a href="https://ru.wikipedia.org/wiki/WebAssembly">WebAssembly(wikipedia)</a>
+				
+				
+					<section  data-auto-animate>
+					
+						<h3>Что это такое?</h3>
+					</section>
+					<section  data-auto-animate>
+						<h3>Что это такое?</h3>
+						<div>
+						JavaScript — это язык фронтенда, то есть лицевой стороны сайта, которую видят пользователи. Чаще
+						всего его используют в вебе для создания интерактивных страниц — с анимированными элементами,
+						всплывающими сообщениями, блоками для отправки информации.</div>
+					</section>
+					<section>
+						TypeScript — это доработанная версия JavaScript. Он помогает писать более чистый и безопасный
+						код, так как предупреждает об ошибках ещё до запуска программы.
+					</section>
 				</section>
-			</section>
+				<section>
+					<section>
+						<h3>История создания</h3>
+					</section>
+					<section>
+						<div style="display: flex; justify-content: center;">
+							<img class="company"
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netscape_icon.svg/640px-Netscape_icon.svg.png">
+					
+						</div>
+						<p style="font-size: 28px;">
+
+							JavaScript был разработан в 1995 году Бренданом Айком в компании Netscape. Язык
+							изначально создавался для добавления интерактивности на веб-страницы и быстро
+							стал стандартом для веб-разработки. JavaScript является динамически
+							типизированным языком, что означает, что типы переменных могут изменяться во
+							время выполнения программы.
+						</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Источники</h3>
+					</section>
+					<section>
+						<a href="https://practicum.yandex.ru/blog/kak-rabotat-s-typescript/">Javascript(practicum)</a>
+					</section>
+				</section>
+				<section>
+					<pre><code class="JavaScript">
+						// Создание переменной
+let number = 10;
+
+// Создание функции
+function greet(name) {
+    if (name) {
+        console.log("Hello, " + name);
+    } else {
+        console.log("Hello, World!");
+    }
+}
+
+// Цикл
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+					</code></pre>
+				</section>
+			</div>
 		</div>
-	</div>
 
-	<script src="dist/reveal.js"></script>
-	<script src="plugin/notes/notes.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
-	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
-		Reveal.initialize({
-			hash: true,
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
 
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
-		});
-	</script>
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+			});
+		</script>
 </body>
 
 </html>
